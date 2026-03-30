@@ -1,9 +1,25 @@
 {
   "source_file": "html_data/webpage5.html",
-  "title": "WikiRoulette — Random Wikipedia Pages",
-  "num_sections": 0,
-  "num_chunks": 0,
-  "cleaned_text": "",
-  "sections": [],
-  "chunks": []
+  "title": "United States Army Logistics Branch - Wikipedia",
+  "num_sections": 1,
+  "num_chunks": 2,
+  "cleaned_text": "Introduction\nThe officer-only Logistics branch of the United States Army was introduced as part of the\n creation of a Logistics Corps encompassing the three long-established functional logistics branches of Quartermaster , Ordnance , and Transportation . [ 1 ] Established on 1 January\n 2008, all Active , Reserve , and National Guard Ordnance, Quartermaster and Transportation Corps officers who had completed the\n Logistics Captains Career Course (LOG C3) or earlier versions of an advanced\n logistics officers course were transferred to the new branch. This move changed the\n Functional Area 90 (multifunctional logistician) program into an Army basic branch.\n Logistics officers maintain their regimental affiliations with their prior\n (secondary specialty) branches. [ 2 ] This move did not affect enlisted soldiers or warrant officers. Additionally, second\n lieutenants continue to accession into the historical Ordnance, Transportation, or\n Quartermaster Officer branches, where they remain until they complete LOG-C3 or\n Multifunctional Logistics Captains Career Course (CCC-RC). [ 1 ] ^ a b \"Introducing\n the Logistics Branch\", Army Logistician ^ Logistics\n Branch Information Sheet This United States Army article is\n a stub . You can help Wikipedia by adding\n missing information .",
+  "sections": [
+    {
+      "heading": "Introduction",
+      "text": "The officer-only Logistics branch of the United States Army was introduced as part of the\n creation of a Logistics Corps encompassing the three long-established functional logistics branches of Quartermaster , Ordnance , and Transportation . [ 1 ] Established on 1 January\n 2008, all Active , Reserve , and National Guard Ordnance, Quartermaster and Transportation Corps officers who had completed the\n Logistics Captains Career Course (LOG C3) or earlier versions of an advanced\n logistics officers course were transferred to the new branch. This move changed the\n Functional Area 90 (multifunctional logistician) program into an Army basic branch.\n Logistics officers maintain their regimental affiliations with their prior\n (secondary specialty) branches. [ 2 ] This move did not affect enlisted soldiers or warrant officers. Additionally, second\n lieutenants continue to accession into the historical Ordnance, Transportation, or\n Quartermaster Officer branches, where they remain until they complete LOG-C3 or\n Multifunctional Logistics Captains Career Course (CCC-RC). [ 1 ] ^ a b \"Introducing\n the Logistics Branch\", Army Logistician ^ Logistics\n Branch Information Sheet This United States Army article is\n a stub . You can help Wikipedia by adding\n missing information ."
+    }
+  ],
+  "chunks": [
+    {
+      "chunk_id": 0,
+      "heading": "Introduction",
+      "text": "The officer-only Logistics branch of the United States Army was introduced as part of the creation of a Logistics Corps encompassing the three long-established functional logistics branches of Quartermaster , Ordnance , and Transportation . [ 1 ] Established on 1 January 2008, all Active , Reserve , and National Guard Ordnance, Quartermaster and Transportation Corps officers who had completed the Logistics Captains Career Course (LOG C3) or earlier versions of an advanced logistics officers course were transferred to the new branch. This move changed the Functional Area 90 (multifunctional logistician) program into an Army basic branch. Logistics officers maintain their regimental affiliations with their prior (secondary specialty) branches. [ 2 ] This move did not affect enlisted soldiers or warrant officers. Additionally, second lieutenants continue to accession into the historical Ordnance, Transportation, or Quartermaster Officer branches, where they remain until they complete LOG-C3 or Multifunctional Logistics Captains Career Course (CCC-RC). [ 1 ] ^ a b \"Introducing the Logistics Branch\", Army Logistician ^ Logistics Branch Information Sheet This United States Army article is a stub . You can help"
+    },
+    {
+      "chunk_id": 1,
+      "heading": "Introduction",
+      "text": "(CCC-RC). [ 1 ] ^ a b \"Introducing the Logistics Branch\", Army Logistician ^ Logistics Branch Information Sheet This United States Army article is a stub . You can help Wikipedia by adding missing information ."
+    }
+  ]
 }
