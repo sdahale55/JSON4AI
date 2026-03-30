@@ -1,0 +1,10 @@
+{
+  "num_documents": 4,
+  "num_chunks": 783,
+  "vocab_size": 10000,
+  "tfidf_matrix_shape": [
+    783,
+    10000
+  ],
+  "avg_chunk_words": 176.2
+}
