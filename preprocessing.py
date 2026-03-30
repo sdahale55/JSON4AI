@@ -5,178 +5,198 @@ import re
 from pathlib import Path
 from bs4 import BeautifulSoup, Comment
 
-# Tags that are usually boilerplate / noise for retrieval
-REMOVE_TAGS = {
-    "script", "style", "noscript", "svg", "path", "iframe", "canvas",
-    "footer", "nav", "form", "aside", "button", "input"
-}
+# -------- helpers --------
 
-# Optional selectors for common boilerplate blocks
-REMOVE_SELECTORS = [
-    "[role='navigation']",
-    "[aria-hidden='true']",
-    ".nav", ".navbar", ".menu", ".footer", ".sidebar",
-    ".advertisement", ".ads", ".promo", ".cookie", ".banner",
-    ".breadcrumbs", ".social", ".share"
-]
-
-
-def normalize_whitespace(text: str) -> str:
-    text = re.sub(r"\r", "\n", text)
+def normalize_text(text: str) -> str:
+    text = text.replace("\r", "\n")
     text = re.sub(r"\n{3,}", "\n\n", text)
     text = re.sub(r"[ \t]+", " ", text)
     return text.strip()
 
+def is_meaningful(text: str) -> bool:
+    text = normalize_text(text)
+    if len(text) < 20:
+        return False
 
-def clean_html(html: str) -> dict:
-    soup = BeautifulSoup(html, "lxml")
+    bad_starts = [
+        "Main menu", "Contents", "Navigation", "Contact us",
+        "Privacy policy", "About Wikipedia", "Jump to content"
+    ]
+    if any(text.startswith(x) for x in bad_starts):
+        return False
 
-    # Remove comments
-    for comment in soup.find_all(string=lambda s: isinstance(s, Comment)):
-        comment.extract()
+    # skip blocks that are mostly symbols / code junk
+    letters = sum(ch.isalnum() for ch in text)
+    return letters / max(len(text), 1) > 0.5
 
-    # Remove noisy tags
-    for tag in soup.find_all(REMOVE_TAGS):
+
+# -------- core preprocessing --------
+
+def remove_noise(soup: BeautifulSoup) -> None:
+    # remove comments
+    for c in soup.find_all(string=lambda s: isinstance(s, Comment)):
+        c.extract()
+
+    # remove obvious junk tags
+    for tag in soup(["script", "style", "noscript", "svg", "path", "iframe", "canvas"]):
         tag.decompose()
 
-    # Remove obvious boilerplate selectors
-    for selector in REMOVE_SELECTORS:
+    # remove common layout / boilerplate tags
+    for tag in soup.find_all(["nav", "footer", "header", "aside", "form"]):
+        tag.decompose()
+
+    # remove common boilerplate selectors
+    noisy_selectors = [
+        "[role='navigation']",
+        "[aria-hidden='true']",
+        ".nav", ".navbar", ".menu", ".sidebar", ".footer", ".header",
+        ".advertisement", ".ads", ".promo", ".cookie", ".banner",
+        ".breadcrumbs", ".social", ".share"
+    ]
+    for selector in noisy_selectors:
         for tag in soup.select(selector):
             tag.decompose()
 
-    # Remove elements hidden via inline style
-    for tag in soup.find_all(style=True):
-        style = tag.get("style", "").lower()
-        if "display:none" in style or "visibility:hidden" in style:
-            tag.decompose()
 
-    # Try to focus on main content first
-    main = (
-        soup.find("main")
-        or soup.find("article")
-        or soup.find(attrs={"role": "main"})
-        or soup.body
-        or soup
-    )
-
-    title = ""
-    if soup.title and soup.title.string:
-        title = normalize_whitespace(soup.title.get_text(" ", strip=True))
-
-    # Extract block-level text to preserve some structure
-    blocks = []
-    for elem in main.find_all(["h1", "h2", "h3", "p", "li", "pre", "code", "blockquote"]):
-        text = elem.get_text(" ", strip=True)
-        text = normalize_whitespace(text)
-        if len(text) >= 20:  # ignore tiny fragments
-            blocks.append(text)
-
-    # Fallback if block extraction is too sparse
-    if not blocks:
-        raw_text = main.get_text("\n", strip=True)
-        raw_text = normalize_whitespace(raw_text)
-        blocks = [b.strip() for b in raw_text.split("\n\n") if len(b.strip()) >= 20]
-
-    cleaned_text = "\n\n".join(blocks)
-    cleaned_text = normalize_whitespace(cleaned_text)
-
-    return {
-        "title": title,
-        "cleaned_text": cleaned_text,
-        "blocks": blocks,
-    }
+def find_main_content(soup: BeautifulSoup):
+    # try useful article roots first
+    candidates = [
+        soup.select_one("#mw-content-text"),   # Wikipedia
+        soup.find("main"),
+        soup.find("article"),
+        soup.find(attrs={"role": "main"}),
+        soup.select_one("#content"),
+        soup.body
+    ]
+    for c in candidates:
+        if c is not None:
+            return c
+    return soup
 
 
-def chunk_text(text: str, max_words: int = 180, overlap_words: int = 40) -> list[str]:
-    paragraphs = [p.strip() for p in text.split("\n\n") if p.strip()]
-    chunks = []
-    current_words = []
+def extract_sections(root) -> list[dict]:
+    sections = []
+    current_heading = "Introduction"
+    current_parts = []
 
-    for para in paragraphs:
-        para_words = para.split()
-
-        # If one paragraph is huge, split it directly
-        if len(para_words) > max_words:
-            if current_words:
-                chunks.append(" ".join(current_words).strip())
-                current_words = []
-
-            start = 0
-            while start < len(para_words):
-                end = min(start + max_words, len(para_words))
-                chunk = " ".join(para_words[start:end]).strip()
-                if chunk:
-                    chunks.append(chunk)
-                if end == len(para_words):
-                    break
-                start = max(0, end - overlap_words)
+    for tag in root.find_all(["h1", "h2", "h3", "p", "li"]):
+        text = normalize_text(tag.get_text(" ", strip=True))
+        if not is_meaningful(text):
             continue
 
-        if len(current_words) + len(para_words) <= max_words:
-            current_words.extend(para_words)
+        if tag.name in ["h1", "h2", "h3"]:
+            if current_parts:
+                sections.append({
+                    "heading": current_heading,
+                    "text": normalize_text(" ".join(current_parts))
+                })
+            current_heading = text
+            current_parts = []
         else:
-            if current_words:
-                chunks.append(" ".join(current_words).strip())
+            current_parts.append(text)
 
-            overlap = current_words[-overlap_words:] if overlap_words > 0 else []
-            current_words = overlap + para_words
+    if current_parts:
+        sections.append({
+            "heading": current_heading,
+            "text": normalize_text(" ".join(current_parts))
+        })
 
-    if current_words:
-        chunks.append(" ".join(current_words).strip())
+    return sections
+
+
+def chunk_sections(sections: list[dict], max_words: int = 180, overlap: int = 30) -> list[dict]:
+    chunks = []
+    chunk_id = 0
+
+    for sec in sections:
+        words = sec["text"].split()
+        if not words:
+            continue
+
+        start = 0
+        while start < len(words):
+            end = min(start + max_words, len(words))
+            chunk_text = " ".join(words[start:end]).strip()
+
+            if chunk_text:
+                chunks.append({
+                    "chunk_id": chunk_id,
+                    "heading": sec["heading"],
+                    "text": chunk_text
+                })
+                chunk_id += 1
+
+            if end == len(words):
+                break
+            start = max(0, end - overlap)
 
     return chunks
 
 
-def preprocess_file(file_path: Path, output_dir: Path) -> dict:
-    html = file_path.read_text(encoding="utf-8", errors="ignore")
-    cleaned = clean_html(html)
-    chunks = chunk_text(cleaned["cleaned_text"])
+def preprocess_html(html: str, source_file: str = "") -> dict:
+    soup = BeautifulSoup(html, "html.parser")
 
-    result = {
-        "source_file": str(file_path),
-        "title": cleaned["title"],
-        "num_blocks": len(cleaned["blocks"]),
+    title = ""
+    if soup.title:
+        title = soup.title.get_text(strip=True)
+
+    remove_noise(soup)
+    root = find_main_content(soup)
+    sections = extract_sections(root)
+    cleaned_text = "\n\n".join(
+        f"{sec['heading']}\n{sec['text']}" for sec in sections
+    ).strip()
+    chunks = chunk_sections(sections)
+
+    return {
+        "source_file": source_file,
+        "title": title,
+        "num_sections": len(sections),
         "num_chunks": len(chunks),
-        "cleaned_text": cleaned["cleaned_text"],
-        "chunks": [{"chunk_id": i, "text": chunk} for i, chunk in enumerate(chunks)],
+        "cleaned_text": cleaned_text,
+        "sections": sections,
+        "chunks": chunks
     }
 
+
+# -------- batch processing for folder --------
+
+def preprocess_file(file_path: Path, output_dir: Path) -> dict:
+    html = file_path.read_text(encoding="utf-8", errors="ignore")
+    result = preprocess_html(html, source_file=str(file_path))
+
     output_dir.mkdir(parents=True, exist_ok=True)
-    out_file = output_dir / f"{file_path.stem}.json"
-    out_file.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
+    out_path = output_dir / f"{file_path.stem}.json"
+    out_path.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")
     return result
 
 
-def preprocess_dataset(input_dir: str, output_dir: str) -> None:
+def preprocess_dataset(input_dir: str = "html_data", output_dir: str = "processed_data") -> None:
     input_path = Path(input_dir)
     output_path = Path(output_dir)
 
-    html_files = sorted(
-        list(input_path.rglob("*.html")) + list(input_path.rglob("*.htm"))
-    )
-
-    if not html_files:
-        print("No HTML files found.")
+    files = sorted(list(input_path.rglob("*.html")) + list(input_path.rglob("*.htm")))
+    if not files:
+        print("No HTML files found in", input_dir)
         return
 
     summary = []
-    for file_path in html_files:
-        result = preprocess_file(file_path, output_path)
+    for fp in files:
+        result = preprocess_file(fp, output_path)
         summary.append({
             "file": result["source_file"],
             "title": result["title"],
-            "num_blocks": result["num_blocks"],
-            "num_chunks": result["num_chunks"],
+            "num_sections": result["num_sections"],
+            "num_chunks": result["num_chunks"]
         })
-        print(f"Processed: {file_path.name} -> {result['num_chunks']} chunks")
+        print(f"Processed {fp.name}: {result['num_sections']} sections, {result['num_chunks']} chunks")
 
-    summary_file = output_path / "summary.json"
-    summary_file.write_text(json.dumps(summary, indent=2, ensure_ascii=False), encoding="utf-8")
-    print(f"\nDone. Outputs saved to: {output_path}")
+    (output_path / "summary.json").write_text(
+        json.dumps(summary, indent=2, ensure_ascii=False),
+        encoding="utf-8"
+    )
+    print(f"\nSaved outputs to: {output_dir}")
 
 
 if __name__ == "__main__":
-    # Example:
-    # Put your HTML files in ./html_data
-    # Processed JSON files will be saved in ./processed_data
     preprocess_dataset("html_data", "processed_data")
