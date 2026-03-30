@@ -1,0 +1,20 @@
+{
+  "source_file": "html_data/webpage9.html",
+  "title": "C28H28P2 - Wikipedia",
+  "num_sections": 1,
+  "num_chunks": 1,
+  "cleaned_text": "Introduction\nThe molecular formula C 28 H 28 P 2 (molar mass: 426.47 g/mol, exact mass: 426.1666 u) may refer to: 1,4-Bis(diphenylphosphino)butane (dppb)",
+  "sections": [
+    {
+      "heading": "Introduction",
+      "text": "The molecular formula C 28 H 28 P 2 (molar mass: 426.47 g/mol, exact mass: 426.1666 u) may refer to: 1,4-Bis(diphenylphosphino)butane (dppb)"
+    }
+  ],
+  "chunks": [
+    {
+      "chunk_id": 0,
+      "heading": "Introduction",
+      "text": "The molecular formula C 28 H 28 P 2 (molar mass: 426.47 g/mol, exact mass: 426.1666 u) may refer to: 1,4-Bis(diphenylphosphino)butane (dppb)"
+    }
+  ]
+}

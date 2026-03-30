@@ -1,0 +1,20 @@
+{
+  "source_file": "html_data/webpage8.html",
+  "title": "Takashi Tamura - Wikipedia",
+  "num_sections": 1,
+  "num_chunks": 1,
+  "cleaned_text": "Introduction\nTakashi Tamura ( 田村 孝 , Tamura Takashi ;\n born 24 September 1961) is a Japanese sailor . He competed in the Tornado event at the 1988 Summer\n Olympics . [ 1 ] ^ \"Takashi\n Tamura\" . Olympedia . Retrieved 21 June 2020 . Takashi Tamura at Olympedia This biographical article related to sailing in Japan is a stub .\n You can help Wikipedia by adding\n missing information .",
+  "sections": [
+    {
+      "heading": "Introduction",
+      "text": "Takashi Tamura ( 田村 孝 , Tamura Takashi ;\n born 24 September 1961) is a Japanese sailor . He competed in the Tornado event at the 1988 Summer\n Olympics . [ 1 ] ^ \"Takashi\n Tamura\" . Olympedia . Retrieved 21 June 2020 . Takashi Tamura at Olympedia This biographical article related to sailing in Japan is a stub .\n You can help Wikipedia by adding\n missing information ."
+    }
+  ],
+  "chunks": [
+    {
+      "chunk_id": 0,
+      "heading": "Introduction",
+      "text": "Takashi Tamura ( 田村 孝 , Tamura Takashi ; born 24 September 1961) is a Japanese sailor . He competed in the Tornado event at the 1988 Summer Olympics . [ 1 ] ^ \"Takashi Tamura\" . Olympedia . Retrieved 21 June 2020 . Takashi Tamura at Olympedia This biographical article related to sailing in Japan is a stub . You can help Wikipedia by adding missing information ."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "source_file": "html_data/webpage10.html",
+  "title": "S4 Shanghai–Jinshan Expressway - Wikipedia",
+  "num_sections": 2,
+  "num_chunks": 2,
+  "cleaned_text": "Introduction\nThe Shanghai–Jinshan Expressway , commonly referred to as the Hujin\n Expressway ( Chinese : 沪金高速公路 ; pinyin : Hùjīn\n Gāosù ) and designated S4 , is an expressway in the city of Shanghai , China . It runs generally in a north-south direction from the\n Xinzhuang Interchange, a large interchange with the Outer Ring Expressway , the G60 Shanghai–Kunming Expressway , the G92 Hangzhou Bay Ring Expressway ,\n and Humin Elevated\n Road in Minhang District to Jinshan District , ending at an interchange with the G15 Shenyang–Haikou Expressway . The\n expressway is tolled south of the Zhuanqiao Service Area in Minhang District , between the exits to Yindu Road\n and the Shanghai–Jiaxing–Huzhou\n Expressway . [ 1 ] Before August 2009, the expressway was known as the A4 Expressway. [ 2 ]\n\nList of exits and interchanges\nInterchange with S20 Outer\n Ring Expressway , Humin Elevated Road , G320 Humin Highway and G60 Shanghai–Kunming Expressway X220 Xinzhu Road - northbound entrance only from westbound, southbound exit only\n to westbound X231 Yindu Road - northbound entrance only from westbound, southbound exit only\n to westbound Shanghai–Jiaxing–Huzhou\n Expressway X421 Xizha Highway - northbound entrance only from westbound, southbound exit\n only to westbound S306 Tuannan Highway and Nianfeng Road Interchange with G1501 Shanghai\n Ring Expressway North Muhua Road - to Shanghai Chemical Industries Zone X262 Zhuanghu Highway Interchange with G15 Shenyang–Haikou Expressway and exit to X250 Tingwei Highway ^ a b China\n Highway Information Service . Retrieved 21 April 2013 . (in Chinese) ^ 申城高速公路将更名 Archived 2016-03-03 at the Wayback Machine (in Chinese) This People's Republic of China road-related\n article is a stub . You can help Wikipedia by adding\n missing information .",
+  "sections": [
+    {
+      "heading": "Introduction",
+      "text": "The Shanghai–Jinshan Expressway , commonly referred to as the Hujin\n Expressway ( Chinese : 沪金高速公路 ; pinyin : Hùjīn\n Gāosù ) and designated S4 , is an expressway in the city of Shanghai , China . It runs generally in a north-south direction from the\n Xinzhuang Interchange, a large interchange with the Outer Ring Expressway , the G60 Shanghai–Kunming Expressway , the G92 Hangzhou Bay Ring Expressway ,\n and Humin Elevated\n Road in Minhang District to Jinshan District , ending at an interchange with the G15 Shenyang–Haikou Expressway . The\n expressway is tolled south of the Zhuanqiao Service Area in Minhang District , between the exits to Yindu Road\n and the Shanghai–Jiaxing–Huzhou\n Expressway . [ 1 ] Before August 2009, the expressway was known as the A4 Expressway. [ 2 ]"
+    },
+    {
+      "heading": "List of exits and interchanges",
+      "text": "Interchange with S20 Outer\n Ring Expressway , Humin Elevated Road , G320 Humin Highway and G60 Shanghai–Kunming Expressway X220 Xinzhu Road - northbound entrance only from westbound, southbound exit only\n to westbound X231 Yindu Road - northbound entrance only from westbound, southbound exit only\n to westbound Shanghai–Jiaxing–Huzhou\n Expressway X421 Xizha Highway - northbound entrance only from westbound, southbound exit\n only to westbound S306 Tuannan Highway and Nianfeng Road Interchange with G1501 Shanghai\n Ring Expressway North Muhua Road - to Shanghai Chemical Industries Zone X262 Zhuanghu Highway Interchange with G15 Shenyang–Haikou Expressway and exit to X250 Tingwei Highway ^ a b China\n Highway Information Service . Retrieved 21 April 2013 . (in Chinese) ^ 申城高速公路将更名 Archived 2016-03-03 at the Wayback Machine (in Chinese) This People's Republic of China road-related\n article is a stub . You can help Wikipedia by adding\n missing information ."
+    }
+  ],
+  "chunks": [
+    {
+      "chunk_id": 0,
+      "heading": "Introduction",
+      "text": "The Shanghai–Jinshan Expressway , commonly referred to as the Hujin Expressway ( Chinese : 沪金高速公路 ; pinyin : Hùjīn Gāosù ) and designated S4 , is an expressway in the city of Shanghai , China . It runs generally in a north-south direction from the Xinzhuang Interchange, a large interchange with the Outer Ring Expressway , the G60 Shanghai–Kunming Expressway , the G92 Hangzhou Bay Ring Expressway , and Humin Elevated Road in Minhang District to Jinshan District , ending at an interchange with the G15 Shenyang–Haikou Expressway . The expressway is tolled south of the Zhuanqiao Service Area in Minhang District , between the exits to Yindu Road and the Shanghai–Jiaxing–Huzhou Expressway . [ 1 ] Before August 2009, the expressway was known as the A4 Expressway. [ 2 ]"
+    },
+    {
+      "chunk_id": 1,
+      "heading": "List of exits and interchanges",
+      "text": "Interchange with S20 Outer Ring Expressway , Humin Elevated Road , G320 Humin Highway and G60 Shanghai–Kunming Expressway X220 Xinzhu Road - northbound entrance only from westbound, southbound exit only to westbound X231 Yindu Road - northbound entrance only from westbound, southbound exit only to westbound Shanghai–Jiaxing–Huzhou Expressway X421 Xizha Highway - northbound entrance only from westbound, southbound exit only to westbound S306 Tuannan Highway and Nianfeng Road Interchange with G1501 Shanghai Ring Expressway North Muhua Road - to Shanghai Chemical Industries Zone X262 Zhuanghu Highway Interchange with G15 Shenyang–Haikou Expressway and exit to X250 Tingwei Highway ^ a b China Highway Information Service . Retrieved 21 April 2013 . (in Chinese) ^ 申城高速公路将更名 Archived 2016-03-03 at the Wayback Machine (in Chinese) This People's Republic of China road-related article is a stub . You can help Wikipedia by adding missing information ."
+    }
+  ]
+}
