@@ -1,0 +1,56 @@
+[
+  {
+    "query": "economy of Illinois",
+    "gold_output": {
+      "query": "economy of Illinois",
+      "answer_summary": "Illinois has a diverse economy with major industrial, agricultural, and service sectors, and Chicago plays a central role in the state's economic activity.",
+      "source_titles": [
+        "Illinois - Wikipedia"
+      ],
+      "key_terms": [
+        "economy",
+        "illinois",
+        "chicago",
+        "industry",
+        "services"
+      ],
+      "metadata": {
+        "top_k": 5,
+        "num_evidence_chunks": 5,
+        "generator": "gold-reference"
+      },
+      "evidence": [
+        {
+          "snippet": "The economy of Illinois is highly diverse, with the global city of Chicago in the northeast, major industrial and agricultural hubs in the north and center, and natural resources such as coal, timber, and petroleum in the south."
+        }
+      ]
+    }
+  },
+  {
+    "query": "Great Lakes shipping and canals",
+    "gold_output": {
+      "query": "Great Lakes shipping and canals",
+      "answer_summary": "The Great Lakes support bulk shipping and connect to major canal systems, including the Saint Lawrence Seaway and the Illinois Waterway.",
+      "source_titles": [
+        "Great Lakes - Wikipedia"
+      ],
+      "key_terms": [
+        "great",
+        "lakes",
+        "shipping",
+        "canals",
+        "seaway"
+      ],
+      "metadata": {
+        "top_k": 5,
+        "num_evidence_chunks": 5,
+        "generator": "gold-reference"
+      },
+      "evidence": [
+        {
+          "snippet": "Although the Saint Lawrence Seaway and Great Lakes Waterway make the Great Lakes accessible to ocean-going vessels."
+        }
+      ]
+    }
+  }
+]

@@ -7,10 +7,28 @@ from bs4 import BeautifulSoup, Comment
 
 # -------- helpers --------
 
+CITATION_RE = re.compile(r"\[\s*(?:citation needed|\d+(?:\s*,\s*\d+)*)\s*\]", re.IGNORECASE)
+SKIP_SECTION_HEADINGS = {
+    "references",
+    "external links",
+    "see also",
+    "notes",
+    "further reading",
+    "bibliography",
+    "sources",
+    "citations",
+    "discography",
+    "filmography",
+    "awards and nominations"
+}
+
 def normalize_text(text: str) -> str:
     text = text.replace("\r", "\n")
+    text = CITATION_RE.sub(" ", text)
+    text = re.sub(r"\s*\(\s*/[^)]{1,80}\)", " ", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     text = re.sub(r"[ \t]+", " ", text)
+    text = re.sub(r"\s+([,.;:?!])", r"\1", text)
     return text.strip()
 
 def is_meaningful(text: str) -> bool:
@@ -30,6 +48,11 @@ def is_meaningful(text: str) -> bool:
     return letters / max(len(text), 1) > 0.5
 
 
+def is_noise_heading(text: str) -> bool:
+    heading = normalize_text(text).lower()
+    return not heading or heading in SKIP_SECTION_HEADINGS
+
+
 # -------- core preprocessing --------
 
 def remove_noise(soup: BeautifulSoup) -> None:
@@ -38,7 +61,10 @@ def remove_noise(soup: BeautifulSoup) -> None:
         c.extract()
 
     # remove obvious junk tags
-    for tag in soup(["script", "style", "noscript", "svg", "path", "iframe", "canvas"]):
+    for tag in soup([
+        "script", "style", "noscript", "svg", "path", "iframe", "canvas",
+        "table", "figure", "figcaption", "sup", "math"
+    ]):
         tag.decompose()
 
     # remove common layout / boilerplate tags
@@ -78,6 +104,8 @@ def extract_sections(root) -> list[dict]:
     sections = []
     current_heading = "Introduction"
     current_parts = []
+    seen_blocks: set[str] = set()
+    skip_current_section = False
 
     for tag in root.find_all(["h1", "h2", "h3", "p", "li"]):
         text = normalize_text(tag.get_text(" ", strip=True))
@@ -85,20 +113,28 @@ def extract_sections(root) -> list[dict]:
             continue
 
         if tag.name in ["h1", "h2", "h3"]:
-            if current_parts:
+            if current_parts and not skip_current_section:
                 sections.append({
                     "heading": current_heading,
-                    "text": normalize_text(" ".join(current_parts))
+                    "text": normalize_text(" ".join(current_parts)),
+                    "word_count": len(normalize_text(" ".join(current_parts)).split())
                 })
             current_heading = text
             current_parts = []
+            skip_current_section = is_noise_heading(text)
         else:
+            if skip_current_section:
+                continue
+            if text in seen_blocks:
+                continue
+            seen_blocks.add(text)
             current_parts.append(text)
 
-    if current_parts:
+    if current_parts and not skip_current_section:
         sections.append({
             "heading": current_heading,
-            "text": normalize_text(" ".join(current_parts))
+            "text": normalize_text(" ".join(current_parts)),
+            "word_count": len(normalize_text(" ".join(current_parts)).split())
         })
 
     return sections
@@ -122,7 +158,8 @@ def chunk_sections(sections: list[dict], max_words: int = 180, overlap: int = 30
                 chunks.append({
                     "chunk_id": chunk_id,
                     "heading": sec["heading"],
-                    "text": chunk_text
+                    "text": chunk_text,
+                    "word_count": len(chunk_text.split())
                 })
                 chunk_id += 1
 

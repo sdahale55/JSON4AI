@@ -3,7 +3,7 @@
     "file": "html_data/webpage1.html",
     "title": "Illinois - Wikipedia",
     "num_sections": 9,
-    "num_chunks": 168
+    "num_chunks": 148
   },
   {
     "file": "html_data/webpage10.html",
@@ -27,13 +27,13 @@
     "file": "html_data/webpage13.html",
     "title": "William E. Mason (Canadian politician) - Wikipedia",
     "num_sections": 1,
-    "num_chunks": 2
+    "num_chunks": 1
   },
   {
     "file": "html_data/webpage14.html",
     "title": "Mike Mueller - Wikipedia",
     "num_sections": 1,
-    "num_chunks": 11
+    "num_chunks": 9
   },
   {
     "file": "html_data/webpage15.html",
@@ -45,37 +45,37 @@
     "file": "html_data/webpage2.html",
     "title": "Great Lakes - Wikipedia",
     "num_sections": 8,
-    "num_chunks": 91
+    "num_chunks": 83
   },
   {
     "file": "html_data/webpage3.html",
     "title": "Ariana Grande - Wikipedia",
     "num_sections": 10,
-    "num_chunks": 262
+    "num_chunks": 225
   },
   {
     "file": "html_data/webpage4.html",
     "title": "1879 Columbia football team - Wikipedia",
     "num_sections": 1,
-    "num_chunks": 2
+    "num_chunks": 1
   },
   {
     "file": "html_data/webpage5.html",
     "title": "United States Army Logistics Branch - Wikipedia",
     "num_sections": 1,
-    "num_chunks": 2
+    "num_chunks": 1
   },
   {
     "file": "html_data/webpage6.html",
     "title": "Brock Hotel (Summersville, West Virginia) - Wikipedia",
     "num_sections": 1,
-    "num_chunks": 2
+    "num_chunks": 1
   },
   {
     "file": "html_data/webpage7.html",
     "title": "Adam22 - Wikipedia",
     "num_sections": 5,
-    "num_chunks": 18
+    "num_chunks": 16
   },
   {
     "file": "html_data/webpage8.html",

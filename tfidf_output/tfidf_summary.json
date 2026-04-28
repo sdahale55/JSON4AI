@@ -1,10 +1,32 @@
 {
   "num_documents": 15,
-  "num_chunks": 573,
+  "num_chunks": 500,
   "vocab_size": 10000,
   "tfidf_matrix_shape": [
-    573,
+    500,
     10000
   ],
-  "avg_chunk_words": 172.97
+  "avg_chunk_words": 173.05,
+  "top_documents_by_chunk_count": [
+    {
+      "title": "Ariana Grande - Wikipedia",
+      "chunk_count": 225
+    },
+    {
+      "title": "Illinois - Wikipedia",
+      "chunk_count": 148
+    },
+    {
+      "title": "Great Lakes - Wikipedia",
+      "chunk_count": 83
+    },
+    {
+      "title": "Adam22 - Wikipedia",
+      "chunk_count": 16
+    },
+    {
+      "title": "Mike Mueller - Wikipedia",
+      "chunk_count": 9
+    }
+  ]
 }

@@ -1,0 +1,26 @@
+[
+  {
+    "query": "economy of Illinois",
+    "relevant_titles": ["Illinois - Wikipedia"]
+  },
+  {
+    "query": "Great Lakes shipping and canals",
+    "relevant_titles": ["Great Lakes - Wikipedia"]
+  },
+  {
+    "query": "Ariana Grande music career",
+    "relevant_titles": ["Ariana Grande - Wikipedia"]
+  },
+  {
+    "query": "Adam22 controversy and podcast",
+    "relevant_titles": ["Adam22 - Wikipedia"]
+  },
+  {
+    "query": "Shanghai Jinshan Expressway route",
+    "relevant_titles": ["S4 Shanghai–Jinshan Expressway - Wikipedia"]
+  },
+  {
+    "query": "Brock Hotel historic building",
+    "relevant_titles": ["Brock Hotel (Summersville, West Virginia) - Wikipedia"]
+  }
+]

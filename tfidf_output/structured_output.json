@@ -1,0 +1,68 @@
+{
+  "query": "economy of Illinois",
+  "answer_summary": "By the early 2000s, Illinois's economy had moved toward a dependence on high-value-added services, such as financial trading, higher education, law, logistics, and medicine. The economy of Illinois is highly diverse, with the global city of Chicago in the northeast, major industrial and agricultural hubs in the north and center, and natural resources such as coal, timber, and petroleum in the south.",
+  "source_titles": [
+    "Illinois - Wikipedia"
+  ],
+  "key_terms": [
+    "economy",
+    "illinois"
+  ],
+  "metadata": {
+    "top_k": 5,
+    "num_evidence_chunks": 5,
+    "generator": "json4ai-heuristic-structured-output"
+  },
+  "evidence": [
+    {
+      "rank": 1,
+      "score": 0.2035,
+      "title": "Illinois - Wikipedia",
+      "source_file": "html_data/webpage1.html",
+      "heading": "Introduction",
+      "chunk_id": 3,
+      "word_count": 180,
+      "snippet": "of the Barack Obama Presidential Center in Chicago. The economy of Illinois is highly diverse, with the global city of Chicago in the northeast, major industrial and agricultural hubs in the north and center, and natural resources such as coal, timber, and petroleum in the south. Owing to its central location and favorable geography, the state is a major transportation hub: the Port of Chicago has access to the Atlantic Ocean through the Great Lakes and Saint Lawrence Seaway and to the Gulf of Mexico from the Mississippi River via the Illinois Waterway. Chicago has been the nation's railroad hub since the 1860s, and its O'Hare International Airport has been among the world's busiest airports for decades. Illinois has long been considered a microcosm of the United States and a bellwether in American culture, exemplified by the phrase Will it play in Peoria?. \"Illinois\" is the modern spelling for the early French Catholic missionaries and explorers' name for the Illinois Native Americans, a name that was spelled in many different ways in the early records. American scholars previously thought the"
+    },
+    {
+      "rank": 2,
+      "score": 0.1851,
+      "title": "Illinois - Wikipedia",
+      "source_file": "html_data/webpage1.html",
+      "heading": "Introduction",
+      "chunk_id": 2,
+      "word_count": 180,
+      "snippet": "a major manufacturing center. The Great Migration from the South established a large Black community, particularly in Chicago, which became a leading cultural, economic, and population center; the Chicago metropolitan area holds about 65% of the state's 12.8 million residents. Two World Heritage Sites are in Illinois: the ancient Cahokia Mounds, and part of the Wright architecture site. A wide variety of protected areas seek to conserve Illinois' natural and cultural resources. Major centers of learning include the University of Chicago, University of Illinois, and Northwestern University. Three U.S. presidents have been elected while residents of Illinois: Abraham Lincoln, Ulysses S. Grant, and Barack Obama; additionally, Ronald Reagan was born and raised in the state, though he served for California. Illinois honors Lincoln with its official state slogan Land of Lincoln. The state is the site of the Abraham Lincoln Presidential Library and Museum in Springfield and the future home of the Barack Obama Presidential Center in Chicago. The economy of Illinois is highly diverse, with the global city of Chicago in the northeast, major industrial and agricultural hubs in"
+    },
+    {
+      "rank": 3,
+      "score": 0.142,
+      "title": "Illinois - Wikipedia",
+      "source_file": "html_data/webpage1.html",
+      "heading": "Birth data by race/ethnicity",
+      "chunk_id": 60,
+      "word_count": 180,
+      "snippet": "of 2011, Illinois is ranked as the 4th-most productive manufacturing state in the country, behind California, Texas, and Ohio. About three-quarters of the state's manufacturers are located in the Northeastern Opportunity Return Region, with 38 percent of Illinois's approximately 18,900 manufacturing plants located in Cook County. As of 2006, the leading manufacturing industries in Illinois, based upon value-added, were chemical manufacturing ($18.3 billion), machinery manufacturing ($13.4 billion), food manufacturing ($12.9 billion), fabricated metal products ($11.5 billion), transportation equipment ($7.4 billion), plastics and rubber products ($7.0 billion), and computer and electronic products ($6.1 billion). By the early 2000s, Illinois's economy had moved toward a dependence on high-value-added services, such as financial trading, higher education, law, logistics, and medicine. In some cases, these services clustered around institutions that hearkened back to Illinois's earlier economies. For example, the Chicago Mercantile Exchange, a trading exchange for global derivatives, had begun its life as an agricultural futures market. Other important non-manufacturing industries include publishing, tourism, and energy production and distribution. Venture capitalists funded a total of approximately $62 billion in the U.S. economy in 2016."
+    },
+    {
+      "rank": 4,
+      "score": 0.1146,
+      "title": "Illinois - Wikipedia",
+      "source_file": "html_data/webpage1.html",
+      "heading": "Birth data by race/ethnicity",
+      "chunk_id": 61,
+      "word_count": 180,
+      "snippet": "agricultural futures market. Other important non-manufacturing industries include publishing, tourism, and energy production and distribution. Venture capitalists funded a total of approximately $62 billion in the U.S. economy in 2016. Of this amount, Illinois-based companies received approximately $1.1 billion. Similarly, in FY 2016, the federal government spent $461 billion on contracts in the U.S. Of this amount, Illinois-based companies received approximately $8.7 billion. Illinois is a net importer of fuels for energy, despite large coal resources and some minor oil production. Illinois exports electricity, ranking fifth among states in electricity production and seventh in electricity consumption. The coal industry of Illinois has its origins in the middle 19th century, when entrepreneurs such as Jacob Loose discovered coal in locations such as Sangamon County. Jacob Bunn contributed to the development of the Illinois coal industry. Coal mining in central and southern Illinois was important in the late 19th and early 20th centuries. The 1909 Cherry Mine disaster was an underground fire that killed 259 miners in the third worst disaster in the history of American coal mining. After 1940 there was"
+    },
+    {
+      "rank": 5,
+      "score": 0.1022,
+      "title": "Illinois - Wikipedia",
+      "source_file": "html_data/webpage1.html",
+      "heading": "Colleges and universities",
+      "chunk_id": 95,
+      "word_count": 180,
+      "snippet": "schools in the world and United States. Illinois also has more than twenty additional accredited four-year universities, both public and private, and dozens of small liberal arts colleges across the state. Additionally, Illinois supports 49 public community colleges in the Illinois Community College System. Schools in Illinois are funded primarily by property taxes, based on state assessment of property values, rather than direct state contributions. Scholar Tracy Steffes has described Illinois public education as historically \"inequitable\", a system where one of \"the wealthiest of states\" is \"the stingiest in its support for education\". There have been several attempts to reform school funding in Illinois. The most notable attempt came in 1973 with the adoption of the Illinois Resource Equalizer Formula, a measure through which it was hoped funding could be collected and distributed to Illinois schools more equitably. However, opposition from affluent Illinois communities who objected to having to pay for the less well-off school districts (many of them Black majority communities, produced by redlining, white flight, and other \"soft\" segregation methods) resulted in the formula's abolition in the late"
+    }
+  ]
+}

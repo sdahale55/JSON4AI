@@ -1,0 +1,402 @@
+{
+  "aggregate": {
+    "num_queries": 6,
+    "top_k": 5,
+    "mean_precision_at_k": 0.2,
+    "mean_recall_at_k": 1.0,
+    "mrr": 1.0,
+    "hit_rate": 1.0
+  },
+  "queries": [
+    {
+      "query": "economy of Illinois",
+      "relevant_titles": [
+        "Illinois - Wikipedia"
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "matched_titles": [
+        "Illinois - Wikipedia"
+      ],
+      "hits": 1,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.20353697201151527,
+          "source_file": "html_data/webpage1.html",
+          "title": "Illinois - Wikipedia",
+          "chunk_id": 3,
+          "heading": "Introduction",
+          "word_count": 180,
+          "text": "of the Barack Obama Presidential Center in Chicago. The economy of Illinois is highly diverse, with the global city of Chicago in the northeast, major industrial and agricultural hubs in the north and center, and natural resources such as coal, timber, and petroleum in the south. Owing to its central location and favorable geography, the state is a major transportation hub: the Port of Chicago has access to the Atlantic Ocean through the Great Lakes and Saint Lawrence Seaway and to the Gulf of Mexico from the Mississippi River via the Illinois Waterway. Chicago has been the nation's railroad hub since the 1860s, and its O'Hare International Airport has been among the world's busiest airports for decades. Illinois has long been considered a microcosm of the United States and a bellwether in American culture, exemplified by the phrase Will it play in Peoria?. \"Illinois\" is the modern spelling for the early French Catholic missionaries and explorers' name for the Illinois Native Americans, a name that was spelled in many different ways in the early records. American scholars previously thought the"
+        },
+        {
+          "rank": 2,
+          "score": 0.18510930049198163,
+          "source_file": "html_data/webpage1.html",
+          "title": "Illinois - Wikipedia",
+          "chunk_id": 2,
+          "heading": "Introduction",
+          "word_count": 180,
+          "text": "a major manufacturing center. The Great Migration from the South established a large Black community, particularly in Chicago, which became a leading cultural, economic, and population center; the Chicago metropolitan area holds about 65% of the state's 12.8 million residents. Two World Heritage Sites are in Illinois: the ancient Cahokia Mounds, and part of the Wright architecture site. A wide variety of protected areas seek to conserve Illinois' natural and cultural resources. Major centers of learning include the University of Chicago, University of Illinois, and Northwestern University. Three U.S. presidents have been elected while residents of Illinois: Abraham Lincoln, Ulysses S. Grant, and Barack Obama; additionally, Ronald Reagan was born and raised in the state, though he served for California. Illinois honors Lincoln with its official state slogan Land of Lincoln. The state is the site of the Abraham Lincoln Presidential Library and Museum in Springfield and the future home of the Barack Obama Presidential Center in Chicago. The economy of Illinois is highly diverse, with the global city of Chicago in the northeast, major industrial and agricultural hubs in"
+        },
+        {
+          "rank": 3,
+          "score": 0.14196364906197928,
+          "source_file": "html_data/webpage1.html",
+          "title": "Illinois - Wikipedia",
+          "chunk_id": 60,
+          "heading": "Birth data by race/ethnicity",
+          "word_count": 180,
+          "text": "of 2011, Illinois is ranked as the 4th-most productive manufacturing state in the country, behind California, Texas, and Ohio. About three-quarters of the state's manufacturers are located in the Northeastern Opportunity Return Region, with 38 percent of Illinois's approximately 18,900 manufacturing plants located in Cook County. As of 2006, the leading manufacturing industries in Illinois, based upon value-added, were chemical manufacturing ($18.3 billion), machinery manufacturing ($13.4 billion), food manufacturing ($12.9 billion), fabricated metal products ($11.5 billion), transportation equipment ($7.4 billion), plastics and rubber products ($7.0 billion), and computer and electronic products ($6.1 billion). By the early 2000s, Illinois's economy had moved toward a dependence on high-value-added services, such as financial trading, higher education, law, logistics, and medicine. In some cases, these services clustered around institutions that hearkened back to Illinois's earlier economies. For example, the Chicago Mercantile Exchange, a trading exchange for global derivatives, had begun its life as an agricultural futures market. Other important non-manufacturing industries include publishing, tourism, and energy production and distribution. Venture capitalists funded a total of approximately $62 billion in the U.S. economy in 2016."
+        },
+        {
+          "rank": 4,
+          "score": 0.11462330080502672,
+          "source_file": "html_data/webpage1.html",
+          "title": "Illinois - Wikipedia",
+          "chunk_id": 61,
+          "heading": "Birth data by race/ethnicity",
+          "word_count": 180,
+          "text": "agricultural futures market. Other important non-manufacturing industries include publishing, tourism, and energy production and distribution. Venture capitalists funded a total of approximately $62 billion in the U.S. economy in 2016. Of this amount, Illinois-based companies received approximately $1.1 billion. Similarly, in FY 2016, the federal government spent $461 billion on contracts in the U.S. Of this amount, Illinois-based companies received approximately $8.7 billion. Illinois is a net importer of fuels for energy, despite large coal resources and some minor oil production. Illinois exports electricity, ranking fifth among states in electricity production and seventh in electricity consumption. The coal industry of Illinois has its origins in the middle 19th century, when entrepreneurs such as Jacob Loose discovered coal in locations such as Sangamon County. Jacob Bunn contributed to the development of the Illinois coal industry. Coal mining in central and southern Illinois was important in the late 19th and early 20th centuries. The 1909 Cherry Mine disaster was an underground fire that killed 259 miners in the third worst disaster in the history of American coal mining. After 1940 there was"
+        },
+        {
+          "rank": 5,
+          "score": 0.1021620469613296,
+          "source_file": "html_data/webpage1.html",
+          "title": "Illinois - Wikipedia",
+          "chunk_id": 95,
+          "heading": "Colleges and universities",
+          "word_count": 180,
+          "text": "schools in the world and United States. Illinois also has more than twenty additional accredited four-year universities, both public and private, and dozens of small liberal arts colleges across the state. Additionally, Illinois supports 49 public community colleges in the Illinois Community College System. Schools in Illinois are funded primarily by property taxes, based on state assessment of property values, rather than direct state contributions. Scholar Tracy Steffes has described Illinois public education as historically \"inequitable\", a system where one of \"the wealthiest of states\" is \"the stingiest in its support for education\". There have been several attempts to reform school funding in Illinois. The most notable attempt came in 1973 with the adoption of the Illinois Resource Equalizer Formula, a measure through which it was hoped funding could be collected and distributed to Illinois schools more equitably. However, opposition from affluent Illinois communities who objected to having to pay for the less well-off school districts (many of them Black majority communities, produced by redlining, white flight, and other \"soft\" segregation methods) resulted in the formula's abolition in the late"
+        }
+      ]
+    },
+    {
+      "query": "Great Lakes shipping and canals",
+      "relevant_titles": [
+        "Great Lakes - Wikipedia"
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "matched_titles": [
+        "Great Lakes - Wikipedia"
+      ],
+      "hits": 1,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.4413363399647399,
+          "source_file": "html_data/webpage2.html",
+          "title": "Great Lakes - Wikipedia",
+          "chunk_id": 13,
+          "heading": "Shipping connection to the ocean",
+          "word_count": 180,
+          "text": "Although the Saint Lawrence Seaway and Great Lakes Waterway make the Great Lakes accessible to ocean-going vessels, shifts in shipping to wider ocean-going container ships —which do not fit through the locks on these routes—have limited container shipping on the lakes. Most Great Lakes trade is of bulk material, and bulk freighters of Seawaymax -size or less can move throughout the entire lakes and out to the Atlantic. Larger ships are confined to working within the lakes. Only barges can access the Illinois Waterway system providing access to the Gulf of Mexico via the Mississippi River. Despite their vast size, large sections of the Great Lakes freeze over in winter, interrupting most shipping from January to March. Some icebreakers ply the lakes, keeping the shipping lanes open through other periods of ice on the lakes. The Great Lakes are connected by the Chicago Sanitary and Ship Canal to the Gulf of Mexico via the Illinois River (from the Chicago River ) and the Mississippi River. An alternate track is via the Illinois River (from Chicago), to the Mississippi, up the"
+        },
+        {
+          "rank": 2,
+          "score": 0.4135215777160822,
+          "source_file": "html_data/webpage2.html",
+          "title": "Great Lakes - Wikipedia",
+          "chunk_id": 81,
+          "heading": "Impacts of climate change on algae",
+          "word_count": 79,
+          "text": "Environmental Protection Agency Binational website of USEPA and Environment Canada for Great Lakes Water Quality Archived May 18, 2016, at the Portuguese Web Archive Great Lakes Environmental Research Laboratory website (an arm of the American National Oceanic and Atmospheric Administration ) Great Lakes Information Network, sponsored by the Great Lakes Commission, an official American interstate compact agency. Great Lakes Echo, a publication covering Great Lakes environmental issues Maritime History of the Great Lakes, digital library covering Great Lakes history."
+        },
+        {
+          "rank": 3,
+          "score": 0.38511379995070166,
+          "source_file": "html_data/webpage2.html",
+          "title": "Great Lakes - Wikipedia",
+          "chunk_id": 6,
+          "heading": "Secondary connecting waterways",
+          "word_count": 22,
+          "text": "The Chicago River and Calumet River systems connect the Great Lakes Basin to the Mississippi River System through human-made alterations and canals."
+        },
+        {
+          "rank": 4,
+          "score": 0.3826753045894734,
+          "source_file": "html_data/webpage2.html",
+          "title": "Great Lakes - Wikipedia",
+          "chunk_id": 41,
+          "heading": "Shipping connection to the ocean",
+          "word_count": 149,
+          "text": "by researchers from the Rochman Lab. About 50 million pounds (23 kt) of fish is harvested each year from Great Lakes which has raised concerns on how this might affect human health. Microscopic pieces of plastic have also been found in drinking water coming from Great Lakes. It is estimated that nearly 40 million people in the region rely on drinking water from the Great Lakes. A number of self-operating floating devices called Seabin, were put in the Great Lakes to capture plastic trash as part of the Great Lakes Plastic Cleanup project. The project captured 74,000 pieces of trash using this technology between 2020 and 2021; however, it does not claim to catch up with 22 million pounds (10.0 kt) of plastic that ends up in Great Lakes every year. The production, consumption, and throwing away of plastics seems to remain the core of Great Lakes trash problem."
+        },
+        {
+          "rank": 5,
+          "score": 0.3818041074165142,
+          "source_file": "html_data/webpage2.html",
+          "title": "Great Lakes - Wikipedia",
+          "chunk_id": 80,
+          "heading": "Impacts of climate change on algae",
+          "word_count": 180,
+          "text": "Ground Water in Storage in the Great Lakes Basin. Scientific Investigations Report 2006-5180. United States Geological Survey. Egan, Dan (2018). The Death and Life of the Great Lakes. W.W. Norton & Company. ISBN 978-0-393-35555-0. Holling, Holling Clancy (2019). Paddle-to-the-Sea. Boston: Houghton Mifflin. ISBN 978-0-395-15082-5. (an illustrated children's book about the Great Lakes and their environment). Hornbeck Tanner, Helen (1987). Atlas of Great Lakes Indian History. University of Oklahoma Press. ISBN 978-0-8061-2056-0. Riley, John L. (2013). The Once and Future Great Lakes Country: An Ecological History. McGill-Queen's University Press. (traces environmental change in the region since the last ice age.) Eric W. Morse 1968, Fur Trade Canoe Routes of Canada /Then and Now, pp 121 \"Great Lakes\". New International Encyclopedia. 1905. \"How the Great Lakes Were Built\". Popular Science Monthly. Vol. 49. June 1896. Great Lakes website of the Canadian Department of the Environment Great Lakes website of the United States Environmental Protection Agency Binational website of USEPA and Environment Canada for Great Lakes Water Quality Archived May 18, 2016, at the Portuguese Web Archive Great Lakes Environmental Research Laboratory website"
+        }
+      ]
+    },
+    {
+      "query": "Ariana Grande music career",
+      "relevant_titles": [
+        "Ariana Grande - Wikipedia"
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "matched_titles": [
+        "Ariana Grande - Wikipedia"
+      ],
+      "hits": 1,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.31263307595253503,
+          "source_file": "html_data/webpage3.html",
+          "title": "Ariana Grande - Wikipedia",
+          "chunk_id": 5,
+          "heading": "2008–2013:\n Career beginnings and Nickelodeon",
+          "word_count": 180,
+          "text": "When she first arrived in Los Angeles, California, to meet with her managers, she expressed a desire to record an R&B album: \"I was like, 'I want to make an R&B album,' They were like 'Um, that's a helluva goal! Who is going to buy a 14-year-old's R&B album?!'\" In 2008, Grande was cast as cheerleader Charlotte in the Broadway musical 13. Grande was cast in the Nickelodeon television show Victorious along with 13 co-star Elizabeth Gillies in 2009. In the sitcom, set at a performing arts high school, she played the \"adorably dimwitted\" Cat Valentine. She had to dye her hair red every other week for the role, which damaged it. The show premiered in March 2010 to the second-largest audience for a live-action series in Nickelodeon, with 5.7 million viewers. The role helped propel Grande to teen idol status, but she was more interested in a music career, saying that acting is \"fun, but music has always been first and foremost with me.\" After the first season of Victorious wrapped, Grande wanted to focus on her music career"
+        },
+        {
+          "rank": 2,
+          "score": 0.21630349954985176,
+          "source_file": "html_data/webpage3.html",
+          "title": "Ariana Grande - Wikipedia",
+          "chunk_id": 6,
+          "heading": "2008–2013:\n Career beginnings and Nickelodeon",
+          "word_count": 180,
+          "text": "saying that acting is \"fun, but music has always been first and foremost with me.\" After the first season of Victorious wrapped, Grande wanted to focus on her music career and began working on her debut album in August 2010. The second season premiered in April 2011 to 6.2 million viewers, becoming the show's highest-rated episode. In May 2011, Grande appeared in Greyson Chance 's video for the song \"Unfriend You\" from his album Hold On 'til the Night (2011), portraying his ex-girlfriend. She made her first musical appearance on the track \"Give It Up\" from the Victorious soundtrack in August 2011. While filming Victorious, Grande made several recordings of herself singing covers of songs by Adele, Whitney Houston and Mariah Carey, and uploaded them to YouTube. A friend of Monte Lipman, chief executive officer (CEO) of Republic Records, came across one of the videos. Impressed by her vocals, he sent the links to Lipman, who signed her to a recording contract. Grande voiced the title role in the English dub of the Spanish-language animated film Snowflake, the White Gorilla"
+        },
+        {
+          "rank": 3,
+          "score": 0.2087413535784964,
+          "source_file": "html_data/webpage3.html",
+          "title": "Ariana Grande - Wikipedia",
+          "chunk_id": 48,
+          "heading": "2024–present: Eternal Sunshine, Wicked, and focus on acting",
+          "word_count": 180,
+          "text": "in the thirteenth season of the horror anthology series American Horror Story, which will start filming by spring 2026. In the summer of 2027, Grande will make her London stage debut opposite her Wicked co-star Jonathan Bailey in Marianne Elliott 's Barbican Theatre production of Sunday in the Park with George. Grande's music is generally pop and R&B with elements of EDM, hip hop, and trap, the latter first appearing prominently on her Christmas & Chill extended play. While consistently maintaining pop and R&B tones, she has increasingly incorporated trap into her music as her career has progressed, thanks to her work with record producer Tommy Brown. She has collaborated with Brown on every album thus far and stated that \"one of the things I love most about working with Tommy is that none of the beats he plays me ever sound the same.\" Grande learned how to sound engineer and produce her own vocals because she \"love[s] being hands on\" with every project, revealing that rapper Mac Miller first taught her how to use the digital audio workstation Pro"
+        },
+        {
+          "rank": 4,
+          "score": 0.16455174964349467,
+          "source_file": "html_data/webpage3.html",
+          "title": "Ariana Grande - Wikipedia",
+          "chunk_id": 206,
+          "heading": "Live performances and tours",
+          "word_count": 180,
+          "text": "2015). \"ICYMI: Ariana Grande Slayed at NYC Pride's Dance on the Pier\". Out. ^ Peters, Mitchell (June 7, 2015). \"Ariana Grande Shares Empowering Essay Following Big Sean Breakup\". Billboard.; and \"Ariana Grande Lashes Out Against 'Double Standard and Misogyny' \". ABC News. June 8, 2015. ^ Plucinska, Joanna (June 8, 2015). \"Pop-Star Sisterhood Approves Ariana Grande's Feminist Stand\". Time. Archived from the original on November 27, 2024. Retrieved November 18, 2024.; and Rosa, Jelani (June 10, 2015). \"Here's What Selena Gomez Had to Say About Ariana Grande's Empowering Feminist Essay\". The Washington Post. ^ Grinberg, Emanuella (June 9, 2015). \"Ariana Grande takes down sexist double standards in a single tweet\". CNN. ^ Yahr, Emily (June 8, 2015). \"Why Ariana Grande's feminist Twitter post was a brilliant career move\". The Washington Post. ^ Roberts, Kayleigh (December 3, 2016). \"Ariana Grande and Madonna Gave a Racy Live Performance Together\". Elle. ^ Daly, Rhian (July 11, 2016). \"Ariana Grande and Victoria Monét share 'Better Days' in support of Black Lives Matter\". NME. Retrieved May 23, 2017. ^ Civico, Aldo (June 6, 2017). \"Ariana"
+        },
+        {
+          "rank": 5,
+          "score": 0.1527625986185553,
+          "source_file": "html_data/webpage3.html",
+          "title": "Ariana Grande - Wikipedia",
+          "chunk_id": 50,
+          "heading": "2024–present: Eternal Sunshine, Wicked, and focus on acting",
+          "word_count": 180,
+          "text": "of different styles, such as reggae -pop (\"Side to Side\"), dance-pop (\"Be Alright\"), and guitar -trap fusion (\"Sometimes\"). Trap-pop was more heavily featured on her fourth and fifth studio albums, Sweetener and Thank U, Next. Elias Leight of Rolling Stone opined that Grande \"set her sights on conquering trap, savage basslines and jittery swarms of drum programming\" and \"embrace[d] the sound of hard-bitten Southern hip-hop\" on Sweetener, exploring funk music with themes of love and prosperity. Craig Jenkins of Vulture noted that she embraced trap and hip hop with undertones of R&B on Thank U, Next, with lyrics about breakups, empowerment, and self-love. Her sixth album, Positions, further emphasized the R&B and trap-pop sound of its two predecessors, with lyrics discussing sex and romance. Grande grew up listening mainly to urban pop and 1990s music. She credited Gloria Estefan with inspiring her to pursue a music career after Estefan saw and complimented Grande's performance on a cruise ship when she was eight years old. Mariah Carey and Whitney Houston are her primary vocal influences: \"I love Mariah Carey. She is"
+        }
+      ]
+    },
+    {
+      "query": "Adam22 controversy and podcast",
+      "relevant_titles": [
+        "Adam22 - Wikipedia"
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "matched_titles": [
+        "Adam22 - Wikipedia"
+      ],
+      "hits": 1,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.27908163167234223,
+          "source_file": "html_data/webpage7.html",
+          "title": "Adam22 - Wikipedia",
+          "chunk_id": 0,
+          "heading": "Introduction",
+          "word_count": 90,
+          "text": "Adam Grandmaison (born November 24, 1983), more commonly known as Adam22, is an American podcaster and YouTuber. He is the creator and host of the hip-hop culture -oriented podcast No Jumper. In 2017, Rolling Stone described him as \" underground hip-hop 's major tastemaker\". Grandmaison became a BMX rider at a young age and enjoyed hip-hop music, including Gucci Mane 's hit \" Bricks \" that includes the line, \"I'm ballin' like an athlete but got no jumper.\" This inspired the name No Jumper for his future blog and podcast."
+        },
+        {
+          "rank": 2,
+          "score": 0.27716548155290716,
+          "source_file": "html_data/webpage7.html",
+          "title": "Adam22 - Wikipedia",
+          "chunk_id": 14,
+          "heading": "Sexual misconduct allegations",
+          "word_count": 180,
+          "text": "his fans\". YouTube. February 18, 2025. Retrieved February 18, 2025. ^ \"Adam22 on X: \"I'm not happy with how my last meme coin drop went. What should I do...\" Twitter. February 19, 2025. Retrieved March 2, 2025. ^ Setaro, Shawn (January 24, 2026). \"Adam22 TKO'd in 73 Seconds by Jason Luv\". Complex. Retrieved January 26, 2026. ^ Hogan, Marc (March 30, 2018). \"Sexual Assault Allegations Against Adam22 of No Jumper Detailed by Two Women\". Pitchfork. ^ Blais-Billie, Braudie (March 25, 2018). \"No Jumper Podcast/Label Founder Adam22 Accused of Rape, Responds\". Pitchfork. ^ \"Atlantic Records Drops Adam22's No Jumper Label Deal Following Sexual Assault Allegations\". Billboard. December 13, 2018. ^ Gee, Andre (June 1, 2023). \"The Coercive World of No Jumper's Adam22: 'He Exploited Me From Day One' \". Rolling Stone. Retrieved August 9, 2025. ^ \"Watch Behind-the-Scenes Footage of the Threesome This YouTube Vlogger Had With a Hottie She Met on Twitter – Maxim\". www.maxim.com. August 2, 2017. Retrieved December 23, 2022. ^ \"adam22 on Twitter:The baby is here, healthy and adorable\". Twitter. Retrieved November 15, 2020. ^ \"The Quadeca"
+        },
+        {
+          "rank": 3,
+          "score": 0.21958850084591983,
+          "source_file": "html_data/webpage7.html",
+          "title": "Adam22 - Wikipedia",
+          "chunk_id": 6,
+          "heading": "2017–present:\n Pornography and other ventures",
+          "word_count": 180,
+          "text": "Grandmaison began debuting in personalized pornographic films alongside his partner Lena Nersesian (known professionally as \"Lena the Plug\") for the website OnlyFans in 2017, uploading a 2-minute and 16-second video to YouTube announcing a sex tape starring the two of them, to be released once his girlfriend was to reach 1 million subscribers. In December 2019, the film was announced to be a professional pornographic film and was released for free in collaboration with Pornhub titled \"Podcast Smash\". The title is a reference to Adam22's No Jumper podcast and stars him and his partner Lena the Plug. Grandmaison, along with his fiancée Lena, announced a new podcast in November 2021 titled Plug Talk, which focuses on interviewing pornographic film stars on OnlyFans and having intercourse with them afterward. It premiered November 16, 2021, with guest Adriana Chechik. In February 2025, Grandmaison released a crypto meme coin on the Solana blockchain. He announced the coin on Twitter 30 minutes after it was deployed. Within hours, the coin grew from a $500k market cap to a $4 million market cap. At which"
+        },
+        {
+          "rank": 4,
+          "score": 0.20659060585061234,
+          "source_file": "html_data/webpage7.html",
+          "title": "Adam22 - Wikipedia",
+          "chunk_id": 10,
+          "heading": "Sexual misconduct allegations",
+          "word_count": 180,
+          "text": "expecting their first child together. Their daughter was born on November 14. Grandmaison identifies as an atheist. ^ Grierson, Tim. Meet Adam22, Underground Hip-Hop's Major Tastemaker Archived June 30, 2018, at the Wayback Machine. Rolling Stone. July 13, 2017. ^ King, Seth (March 17, 2020). \"Are you the next Lil Pump? These YouTubers will tell you — for a price\". Input. Retrieved December 23, 2022. ^ Weekly, L. A. (July 2, 2012). \"How Adam Grandmaison Is Changing the Way You Look at BMX\". LA Weekly. Retrieved December 23, 2022. ^ Grierson, Tim.. How Adam22 Turned His BMX Podcast Into Essential Listening for Rap Fans. LA Weekly. March 22, 2017. ^ \"How No Jumper's Adam22 Became an Unlikely Rap Tastemaker\". Complex. Retrieved December 23, 2022. ^ \"The true origin story of No Jumper\". The FADER. Retrieved August 3, 2018. ^ \"Hip-Hop's Punk Moment Has Arrived\". The New York Times. June 23, 2017. ISSN 0362-4331. Retrieved December 23, 2022. ^ \"No Jumper - YouTube\". www.youtube.com. Retrieved August 17, 2023. ^ \"Adam Grandmaison's 'No Jumper' Podcast Is a Drama and Hip Hop Extravaganza\"."
+        },
+        {
+          "rank": 5,
+          "score": 0.19835264656231477,
+          "source_file": "html_data/webpage7.html",
+          "title": "Adam22 - Wikipedia",
+          "chunk_id": 2,
+          "heading": "2011–present: No Jumper",
+          "word_count": 180,
+          "text": "No Jumper was originally a blog on Tumblr created by George Potter. The blog, which was financed by Grandmaison, showed early interest in underground artists such as SpaceGhostPurrp and Clams Casino, and reviewed obscure Gucci Mane mixtapes, treating the underground with \"critical attention\". Revived in 2015, Grandmaison's No Jumper podcast, hosted on YouTube, focuses on interviews with rap artists and pop culture tastemakers. As of August 2023, the channel has about 1.6 billion video views. It originally started as a BMX podcast with vlogs dedicated to Grandmaison's life running ONSOMESHIT's retail store. His interview of Memphis underground rapper Xavier Wulf soon turned viral within hip-hop communities, sparking Grandmaison's newfound interest in interviewing known figures within both underground and mainstream hip-hop. Grandmaison, through his No Jumper podcast, has been noted for interviewing up-and-coming talent as well as established rappers. He has interviewed artists including Lil Yachty, Lil Peep, Pouya, Juice Wrld, Suicideboys, Young Thug, 6ix9ine and most famously XXXTentacion in April 2016; the latter interview has received over 21 million views as of 2023. This was the Florida rapper's first official"
+        }
+      ]
+    },
+    {
+      "query": "Shanghai Jinshan Expressway route",
+      "relevant_titles": [
+        "S4 Shanghai–Jinshan Expressway - Wikipedia"
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "matched_titles": [
+        "S4 Shanghai–Jinshan Expressway - Wikipedia"
+      ],
+      "hits": 1,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.7004467399076026,
+          "source_file": "html_data/webpage10.html",
+          "title": "S4 Shanghai–Jinshan Expressway - Wikipedia",
+          "chunk_id": 0,
+          "heading": "Introduction",
+          "word_count": 111,
+          "text": "The Shanghai–Jinshan Expressway, commonly referred to as the Hujin Expressway ( Chinese: 沪金高速公路; pinyin: Hùjīn Gāosù ) and designated S4, is an expressway in the city of Shanghai, China. It runs generally in a north-south direction from the Xinzhuang Interchange, a large interchange with the Outer Ring Expressway, the G60 Shanghai–Kunming Expressway, the G92 Hangzhou Bay Ring Expressway, and Humin Elevated Road in Minhang District to Jinshan District, ending at an interchange with the G15 Shenyang–Haikou Expressway. The expressway is tolled south of the Zhuanqiao Service Area in Minhang District, between the exits to Yindu Road and the Shanghai–Jiaxing–Huzhou Expressway. Before August 2009, the expressway was known as the A4 Expressway."
+        },
+        {
+          "rank": 2,
+          "score": 0.4835532028077908,
+          "source_file": "html_data/webpage10.html",
+          "title": "S4 Shanghai–Jinshan Expressway - Wikipedia",
+          "chunk_id": 1,
+          "heading": "List of exits and interchanges",
+          "word_count": 116,
+          "text": "Interchange with S20 Outer Ring Expressway, Humin Elevated Road, G320 Humin Highway and G60 Shanghai–Kunming Expressway X220 Xinzhu Road - northbound entrance only from westbound, southbound exit only to westbound X231 Yindu Road - northbound entrance only from westbound, southbound exit only to westbound Shanghai–Jiaxing–Huzhou Expressway X421 Xizha Highway - northbound entrance only from westbound, southbound exit only to westbound S306 Tuannan Highway and Nianfeng Road Interchange with G1501 Shanghai Ring Expressway North Muhua Road - to Shanghai Chemical Industries Zone X262 Zhuanghu Highway Interchange with G15 Shenyang–Haikou Expressway and exit to X250 Tingwei Highway ^ China Highway Information Service. Retrieved 21 April 2013. (in Chinese) ^ 申城高速公路将更名 Archived 2016-03-03 at the Wayback Machine (in Chinese)"
+        },
+        {
+          "rank": 3,
+          "score": 0.0779420092842813,
+          "source_file": "html_data/webpage1.html",
+          "title": "Illinois - Wikipedia",
+          "chunk_id": 100,
+          "heading": "Colleges and universities",
+          "word_count": 180,
+          "text": "of the largest suburban commuter rail system in the United States, operated by Metra, uses existing rail lines to provide direct commuter rail access for hundreds of suburbs to the city and beyond, with one line extending into Kenosha, Wisconsin. The South Shore Line commuter service originates in Chicago and connects the state to Northwest Indiana. The Illinois Department of Transportation (IDOT) has programmed several new passenger rail routes to serve the state. These include the Chicago- Moline route (to be operated by Amtrak ) and the Chicago- Rockford route (to be operated by Metra ). A route between Chicago and Peoria was accepted into the Federal Railroad Administration's (FRA) Corridor Identification and Development Program and is undergoing studies. In addition to the state's rail lines, the Mississippi River and Illinois River provide major transportation routes for the state's agricultural interests. Lake Michigan gives Illinois access to the Atlantic Ocean by way of the Saint Lawrence Seaway. The Illinois International Port District operates the Port of Chicago, which is located on Lake Michigan at the mouth of the Calumet River."
+        },
+        {
+          "rank": 4,
+          "score": 0.030871903865615127,
+          "source_file": "html_data/webpage2.html",
+          "title": "Great Lakes - Wikipedia",
+          "chunk_id": 44,
+          "heading": "Impacts of climate change on algae",
+          "word_count": 180,
+          "text": "freight. Barges from middle North America were able to reach the Atlantic Ocean from the Great Lakes when the Welland Canal opened in 1824 and the later Erie Canal opened in 1825. By 1848, with the opening of the Illinois and Michigan Canal at Chicago, direct access to the Mississippi River was possible from the lakes. With these two canals an all-inland water route was provided between New York City and New Orleans. The main business of many of the passenger lines in the 19th century was transporting immigrants. Many of the larger cities owe their existence to their position on the lakes as a freight destination as well as for being a magnet for immigrants. After railroads and surface roads developed, the freight and passenger businesses dwindled and, except for ferries and a few foreign cruise ships, have now vanished. The immigration routes still have an effect today. Immigrants often formed their own communities, and some areas have a pronounced ethnicity, such as Dutch, German, Polish, Finnish, and many others. Since many immigrants settled for a time in New"
+        },
+        {
+          "rank": 5,
+          "score": 0.029488350358647858,
+          "source_file": "html_data/webpage1.html",
+          "title": "Illinois - Wikipedia",
+          "chunk_id": 26,
+          "heading": "European exploration and settlement prior to 1800",
+          "word_count": 180,
+          "text": "some 75 mi (121 km) northwest of Chicago. The Quad Cities region, located along the Mississippi River in northern Illinois, had a population of 381,342 in 2011. The midsection of Illinois is the second major division, called Central Illinois. Historically prairie, it is now mainly agricultural and known as the Heart of Illinois. It is characterized by small towns and medium–small cities. The western section (west of the Illinois River) was originally part of the Military Tract of 1812 and forms the conspicuous western bulge of the state. Agriculture, particularly corn and soybeans, as well as educational institutions and manufacturing centers, figure prominently in Central Illinois. Cities include Peoria; Springfield, the state capital; Quincy; Decatur; Bloomington-Normal; and Champaign - Urbana. The third division is Southern Illinois, comprising the area south of U.S. Route 50, including Little Egypt, near the juncture of the Mississippi River and Ohio River. Southern Illinois is the site of the ancient city of Cahokia, as well as the site of the first state capital at Kaskaskia, which today is separated from the rest of the state"
+        }
+      ]
+    },
+    {
+      "query": "Brock Hotel historic building",
+      "relevant_titles": [
+        "Brock Hotel (Summersville, West Virginia) - Wikipedia"
+      ],
+      "precision_at_k": 0.2,
+      "recall_at_k": 1.0,
+      "reciprocal_rank": 1.0,
+      "matched_titles": [
+        "Brock Hotel (Summersville, West Virginia) - Wikipedia"
+      ],
+      "hits": 1,
+      "results": [
+        {
+          "rank": 1,
+          "score": 0.5693162511481034,
+          "source_file": "html_data/webpage6.html",
+          "title": "Brock Hotel (Summersville, West Virginia) - Wikipedia",
+          "chunk_id": 0,
+          "heading": "Introduction",
+          "word_count": 131,
+          "text": "Brock Hotel, also known as the Brock House, is a historic hotel located at Summersville, Nicholas County, West Virginia. It was built about 1890, and is a large 2½- story, frame dwelling. It features broad, shady porches and high pitched twin gables in a vernacular Queen Anne style. It measures approximately 48-foot-wide (15 m) and 40-foot-deep (12 m). It operated as a hotel until about 1914. It was listed on the National Register of Historic Places in 1993. ^ \"National Register Information System\". National Register of Historic Places. National Park Service. July 9, 2010. ^ Emogene Brock Perkins and Stacy Sone (February 1993). \"National Register of Historic Places Inventory Nomination Form: Brock Hotel\" (PDF). State of West Virginia, West Virginia Division of Culture and History, Historic Preservation. Retrieved August 18, 2011."
+        },
+        {
+          "rank": 2,
+          "score": 0.12506214372735674,
+          "source_file": "html_data/webpage1.html",
+          "title": "Illinois - Wikipedia",
+          "chunk_id": 11,
+          "heading": "European exploration and settlement prior to 1800",
+          "word_count": 180,
+          "text": "Chicago River. Pope and others envisioned a canal that would connect the Chicago and Illinois rivers and thus connect the Great Lakes to the Mississippi. In 1818, Illinois became the 21st U.S. state. The capital remained at Kaskaskia, headquartered in a small building rented by the state. In 1819, Vandalia became the capital, and over the next 18 years, three separate buildings were built to serve successively as the capitol building. In 1837, the state legislators representing Sangamon County, under the leadership of state representative Abraham Lincoln, succeeded in having the capital moved to Springfield, where a fifth capitol building was constructed. A sixth capitol building was erected in 1867, which continues to serve as the Illinois capitol today. Though it was ostensibly a \" free state \", there was nonetheless slavery in Illinois. The ethnic French had owned black slaves since the 1720s, and American settlers had already brought slaves into the area from Kentucky. Slavery was nominally banned by the Northwest Ordinance, but that was not enforced for those already holding slaves. When Illinois became a state in"
+        },
+        {
+          "rank": 3,
+          "score": 0.08249578254601907,
+          "source_file": "html_data/webpage1.html",
+          "title": "Illinois - Wikipedia",
+          "chunk_id": 74,
+          "heading": "Birth data by race/ethnicity",
+          "word_count": 180,
+          "text": "what is now Fort Massac State Park, becoming the first park in a system encompassing more than 60 parks and about the same number of recreational and wildlife areas. Areas under the protection of the National Park Service include: the Illinois and Michigan Canal National Heritage Corridor near Lockport, the Lewis and Clark National Historic Trail, the Lincoln Home National Historic Site in Springfield, the Mormon Pioneer National Historic Trail, the Trail of Tears National Historic Trail, the American Discovery Trail, the Pullman National Monument, and New Philadelphia Town Site. The federal government also manages the Shawnee National Forest and the Midewin National Tallgrass Prairie. As one of the United States' major metropolises, all major sports leagues have teams headquartered in Chicago. Two Major League Baseball teams are located in the state. The Chicago Cubs of the National League play in the second-oldest major league stadium, Wrigley Field, and went the longest length of time without a championship in all of major American sport, from 1908 to 2016, when they won the World Series. The Chicago White Sox of the"
+        },
+        {
+          "rank": 4,
+          "score": 0.06909034297916974,
+          "source_file": "html_data/webpage1.html",
+          "title": "Illinois - Wikipedia",
+          "chunk_id": 71,
+          "heading": "Birth data by race/ethnicity",
+          "word_count": 180,
+          "text": "the city center in suburban Brookfield, contains more than 2,300 animals and covers 216 acres (87 ha). Lincoln Park Zoo is located in Lincoln Park on Chicago's North Side, approximately 3 miles (4.8 km) north of the Loop. The zoo, including Nature Boardwalk, occupies 49 acres (20 ha) of the park. Vandalia State House State Historic Site in Vandalia The Museum of Science and Industry in Chicago Magnolia Manor is a Victorian period historic house museum in Cairo. Lincoln Home National Historic Site in Springfield The Polish Museum of America in Chicago A Railway Post Office preserved at the Illinois Railway Museum in Union Illinois is a leader in music education, having hosted the Midwest Clinic International Band and Orchestra Conference since 1946, as well being home to the Illinois Music Educators Association (ILMEA, formerly IMEA), one of the largest professional music educator's organizations in the country. Each summer since 2004, Southern Illinois University Carbondale has played host to the Southern Illinois Music Festival, which presents dozens of performances throughout the region. Past featured artists include the Eroica Trio and"
+        },
+        {
+          "rank": 5,
+          "score": 0.047346221180052474,
+          "source_file": "html_data/webpage2.html",
+          "title": "Great Lakes - Wikipedia",
+          "chunk_id": 65,
+          "heading": "Impacts of climate change on algae",
+          "word_count": 180,
+          "text": "Company. p. 64. ISBN 978-1-4674-3517-8. Retrieved September 7, 2022. By 1681, a map published in Paris, obviously based on this new information, shows the Mississippi River and the western shore of Lake Michigan. Earlier maps had called the lake Lac des Illinois; this was the first to call it Lac de Michigami, thus introducing an early variation of the future state's name. ^ Room, A. (2006). Placenames of the World: Origins And Meanings of the Names for 6,600 Countries, Cities, Territories, Natural Features And Historic Sites. McFarland. p. 150. ISBN 978-0-7864-2248-7. ^ Room (2006), p. 171. ^ Sioui, Georges E. (1999). Huron-Wendat. Jane Brierley. UBC Press. ISBN 978-0-7748-0715-9. Retrieved March 12, 2009. ^ Fonger, Ron (May 3, 2007). \"Genesee, Oakland counties adopt historic name for water group\". The Flint Journal. Retrieved December 6, 2011. ^ Weiland, Matt; Wilsey, Sean (2010). State by State. HarperCollins. p. 226. ISBN 978-0-06-204357-3. ^ Ylvisaker, Anne (2004). Lake Ontario. Capstone. p. 12. ISBN 978-0-7368-2211-4. ^ \"The Great Lakes\". Environmaal Protection Agency. August 20, 2015. {{ cite web }}: CS1 maint: deprecated archival service ( link"
+        }
+      ]
+    }
+  ]
+}
